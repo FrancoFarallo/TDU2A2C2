@@ -8,6 +8,7 @@ public class HeroBullet : MonoBehaviour
     void Start()
     {
         speed = transform.forward * velocity;
+        Destroy(gameObject, 5f); // Destroy the bullet after 5 seconds
     }
 
     void Update()
@@ -19,7 +20,7 @@ public class HeroBullet : MonoBehaviour
     {
         if (other.gameObject.CompareTag("Enemy"))
         {
-            Destroy(other.gameObject);
+            Destroy(other.gameObject); // Destroy the enemy
         }
     }
 }
