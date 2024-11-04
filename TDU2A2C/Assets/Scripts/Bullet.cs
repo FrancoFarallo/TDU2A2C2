@@ -5,6 +5,7 @@ public class Bullet : MonoBehaviour
     public float lifeTime = 5f;
     public Vector3 direction;
     public float speed = 1;
+    public MeshRenderer mesh;
 
     void Start()
     {
